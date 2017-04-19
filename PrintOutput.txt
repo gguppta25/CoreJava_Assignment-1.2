@@ -1,0 +1,38 @@
+
+public class PrintOutput {
+	public static void main (String args[])
+	{
+
+	OopsClass oo = new OopsClass();
+	oo.output1();
+	oo.output2();
+	oo.output3();
+	oo.output4();
+	}
+}	
+class OopsClass
+{
+	int a=10;
+	int b=20;
+	void output1()
+	{	
+		b=a-- - --a;
+		System.out.println("The value of b is "+ b);
+	}
+	void output2()
+	{	
+		int c= a--;
+		System.out.println("The value of c is "+ c);
+	}
+	void output3()
+	{	
+		int d= a>>2;
+		System.out.println("The value of d is "+ d);
+	}
+	void output4()
+	{	
+		int e= a&b;
+		System.out.println("The value of e is "+ e);
+	}	
+
+}
